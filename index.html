@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be My Valentine ❤️</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<audio id="music" src="assets/music.mp3" loop></audio>
+
+<div class="container">
+    <h1 id="question">Will you be my Valentine? 💖🥺</h1>
+
+    <div class="buttons" id="buttons">
+        <button id="yesBtn">Yes ❤️</button>
+        <button id="noBtn">No 🙈</button>
+    </div>
+</div>
+
+<div id="celebration" class="hidden">
+
+    <h1 class="success">
+        Glad you said YES!! 😍💞🎉
+    </h1>
+
+    <!-- Hug animation -->
+    <div class="hug-container">
+        <div class="person left">🥰</div>
+        <div class="person right">😘</div>
+    </div>
+
+    <!-- Love Meter -->
+    <div class="love-meter">
+        Love Level: <span id="loveValue">0%</span>
+        <div class="bar">
+            <div class="fill" id="fill"></div>
+        </div>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+        <img id="slide" src="assets/pic1.jpeg">
+    </div>
+
+    <!-- Love Letter -->
+    <button id="letterBtn">Open Love Letter 💌</button>
+
+</div>
+
+<div id="letterPopup" class="popup hidden">
+    <div class="popup-content">
+        <h2>My Love ❤️</h2>
+        <p>
+            You make every day brighter and every moment sweeter.
+            Thank you for being my happiness, my comfort,
+            and my favorite person. 💖
+        </p>
+        <button onclick="closeLetter()">Close</button>
+    </div>
+</div>
+
+<div id="hearts-container"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

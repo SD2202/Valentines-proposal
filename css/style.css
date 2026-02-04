@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    color: white;
+    overflow-x: hidden;
+}
+
+.container { margin-top: 20vh; }
+
+h1 { font-size: 2.4rem; }
+
+button {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#yesBtn { background:#ff2e63;color:white; }
+#noBtn { background:white;color:#ff2e63; }
+
+.hidden { display:none; }
+
+.success { font-size:3rem;margin-top:10vh; }
+
+/* Hug animation */
+.hug-container {
+    width:300px;height:80px;
+    margin:20px auto;position:relative;
+}
+
+.person {
+    font-size:50px;
+    position:absolute;
+}
+
+.left { left:0; animation:hugLeft 2s forwards; }
+.right { right:0; animation:hugRight 2s forwards; }
+
+@keyframes hugLeft { to { left:110px; } }
+@keyframes hugRight { to { right:110px; } }
+
+/* Love meter */
+.bar {
+    width:250px;height:20px;
+    background:white;margin:10px auto;
+    border-radius:20px;
+}
+
+.fill {
+    height:100%;
+    width:0%;
+    background:#ff2e63;
+    border-radius:20px;
+}
+
+/* slideshow */
+.slideshow img {
+    width:200px;height:200px;
+    border-radius:15px;
+    object-fit:cover;
+    margin:15px;
+}
+
+/* hearts */
+.heart {
+    position:absolute;
+    font-size:24px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall {
+    from { transform:translateY(-10vh); }
+    to { transform:translateY(110vh); }
+}
+
+/* popup */
+.popup {
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.popup-content {
+    background:white;
+    color:black;
+    width:80%;
+    max-width:400px;
+    margin:20% auto;
+    padding:20px;
+    border-radius:10px;
+}
