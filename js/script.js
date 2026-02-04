@@ -65,9 +65,9 @@ function animateLoveMeter() {
 
 /* Slideshow */
 const photos = [
-    "assets/pic1.jpeg",
-    "assets/pic2.jpeg",
-    "assets/pic3.jpeg"
+    "assets/pic1.jpg",
+    "assets/pic2.jpg",
+    "assets/pic3.jpg"
 ];
 
 function slideshow() {
